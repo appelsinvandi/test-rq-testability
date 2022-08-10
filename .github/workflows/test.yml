@@ -2,7 +2,8 @@ name: Test all versions
 
 on:
   push:
-    - main
+    branches:
+      - main
 
 concurrency:
   group: tests
