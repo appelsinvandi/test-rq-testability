@@ -19,13 +19,13 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: '16'
 
       - name: Install packages
         run: yarn install --immutable
 
       - name: Test
-        run: yarn test:react-16
+        run: yarn test:react-16 --forceExit
 
   test-react-17:
     name: Test React ^17
@@ -36,13 +36,13 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: '16'
 
       - name: Install packages
         run: yarn install --immutable
 
       - name: Test
-        run: yarn test:react-17
+        run: yarn test:react-17 --forceExit
 
   test-react-18:
     name: Test React ^18
@@ -53,10 +53,10 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v3
         with:
-          node-version: "16"
+          node-version: '16'
 
       - name: Install packages
         run: yarn install --immutable
 
       - name: Test
-        run: yarn test:react-18
+        run: yarn test:react-18 --forceExit
