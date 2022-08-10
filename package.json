@@ -1,0 +1,12 @@
+{
+  "name": "test-rq-testability",
+  "packageManager": "yarn@3.2.2",
+  "workspaces": [
+    "test-cases/*"
+  ],
+  "scripts": {
+    "test:react-16": "yarn workspace @test-case/react-16 test",
+    "test:react-17": "yarn workspace @test-case/react-17 test",
+    "test:react-18": "yarn workspace @test-case/react-18 test"
+  }
+}
